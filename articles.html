@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据教育 - 文章</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: #38bdf8;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+        }
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .article-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: border-color 0.2s;
+        }
+        .article-card:hover {
+            border-color: #38bdf8;
+        }
+        .article-card h3 {
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .article-card .meta {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 0.75rem;
+        }
+        .article-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #0f172a;
+            color: #38bdf8;
+            padding: 0.15rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-right: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>数据教育文章</h1>
+        <p class="subtitle">Data Education &mdash; Articles &amp; Insights</p>
+
+        <div class="article-list">
+            <div class="article-card">
+                <h3>幂函数在数据建模中的应用</h3>
+                <div class="meta">2026-05-08 &middot; <span class="tag">数学</span><span class="tag">数据科学</span></div>
+                <p>探讨幂函数的基本性质及其在数据拟合、幂律分布和规模效应建模中的实际应用，从高中数学延伸到数据科学场景。</p>
+            </div>
+
+            <div class="article-card">
+                <h3>从指数到对数：理解数据增长模式</h3>
+                <div class="meta">2026-04-20 &middot; <span class="tag">数学</span><span class="tag">基础概念</span></div>
+                <p>指数增长与对数增长是数据分析中最常见的两种模式。本文通过实际案例对比两种增长模式的差异和适用场景。</p>
+            </div>
+
+            <div class="article-card">
+                <h3>概率论基础：从古典概型到贝叶斯思维</h3>
+                <div class="meta">2026-04-05 &middot; <span class="tag">概率</span><span class="tag">统计学</span></div>
+                <p>介绍概率论的核心概念，重点讲解贝叶斯定理的直观理解和在数据教育中的教学方法。</p>
+            </div>
+
+            <div class="article-card">
+                <h3>用 Python 可视化数学函数</h3>
+                <div class="meta">2026-03-15 &middot; <span class="tag">编程</span><span class="tag">可视化</span></div>
+                <p>使用 matplotlib 和 plotly 绘制常见数学函数图像，帮助学生在编程中直观理解函数性质。</p>
+            </div>
+
+            <div class="article-card">
+                <h3>数据素养：为什么每个人都应该学点数据分析</h3>
+                <div class="meta">2026-03-01 &middot; <span class="tag">教育</span><span class="tag">数据素养</span></div>
+                <p>在信息爆炸的时代，数据素养已成为基本技能。讨论数据教育在中小学阶段的必要性和实施路径。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
