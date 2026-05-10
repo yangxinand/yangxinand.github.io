@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幂函数在数据建模中的应用 - 数据教育</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+        .back-link {
+            display: inline-block;
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: #38bdf8; }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+        .article-header h1 {
+            font-size: 2rem;
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+        }
+        .article-header .meta {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #38bdf8;
+            padding: 0.15rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-right: 0.4rem;
+        }
+
+        .article-body h2 {
+            font-size: 1.4rem;
+            color: #e2e8f0;
+            margin: 2rem 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #334155;
+        }
+        .article-body h3 {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .article-body p {
+            color: #94a3b8;
+            margin-bottom: 1rem;
+        }
+        .article-body ul, .article-body ol {
+            color: #94a3b8;
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+        .article-body li {
+            margin-bottom: 0.4rem;
+        }
+        .article-body code {
+            background: #1e293b;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #38bdf8;
+        }
+        .article-body .highlight-box {
+            background: #1e293b;
+            border-left: 3px solid #38bdf8;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .article-body .highlight-box p {
+            margin: 0;
+            color: #cbd5e1;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #334155;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../articles.html" class="back-link">&larr; 返回文章列表</a>
+
+        <div class="article-header">
+            <h1>幂函数在数据建模中的应用</h1>
+            <div class="meta">
+                2026-05-08 &middot;
+                <span class="tag">数学</span>
+                <span class="tag">数据科学</span>
+            </div>
+        </div>
+
+        <div class="article-body">
+            <p>幂函数是数学中最基本的函数类型之一，形式为 <code>y = x<sup>&alpha;</sup></code>（其中 &alpha; 为常数）。在数据科学领域，幂函数有着广泛而深刻的应用。</p>
+
+            <h2>1. 幂律分布</h2>
+            <p>自然界和社会现象中大量存在幂律分布。例如：</p>
+            <ul>
+                <li><strong>齐普夫定律：</strong>语言中单词出现频率与其排名成反比</li>
+                <li><strong>帕累托分布：</strong>财富分配中 20% 的人口掌握 80% 的财富</li>
+                <li><strong>网络科学：</strong>社交网络中节点连接数的无标度特性</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>关键洞察：</strong>幂律分布的特征是在双对数坐标系中呈现为一条直线，这为数据检测提供了简单有效的方法。</p>
+            </div>
+
+            <h2>2. 数据拟合与回归</h2>
+            <p>当数据呈现非线性增长模式时，幂函数回归是一种强大的工具。基本思路是：</p>
+            <ol>
+                <li>对等式两边取对数：<code>ln y = ln a + &alpha; ln x</code></li>
+                <li>转换为线性回归问题</li>
+                <li>使用最小二乘法估计参数</li>
+            </ol>
+
+            <h2>3. 规模效应建模</h2>
+            <p>在经济学和生物学中，幂函数常用于描述规模效应：</p>
+            <ul>
+                <li><strong>代谢率与体重：</strong>克莱伯定律指出基础代谢率与体重的 3/4 次幂成正比</li>
+                <li><strong>城市规模：</strong>城市基础设施与人口规模呈亚线性关系（&alpha; &lt; 1）</li>
+                <li><strong>学习曲线：</strong>生产成本随经验累积呈幂函数下降</li>
+            </ul>
+
+            <h2>4. 教学建议</h2>
+            <p>在教学中，建议从学生熟悉的面积（<code>x<sup>2</sup></code>）和体积（<code>x<sup>3</sup></code>）出发，逐步引导到分数幂和无理数幂。关键是要让学生理解：</p>
+            <ul>
+                <li>幂函数的核心是底数为变量、指数为常数</li>
+                <li>不同指数值决定了函数的增长/衰减特性</li>
+                <li>幂函数与指数函数在数据建模中的不同适用场景</li>
+            </ul>
+
+            <h2>5. 小结</h2>
+            <p>幂函数从高中数学延伸到数据科学，始终是一个基础而强大的建模工具。掌握幂函数的性质和应用，对于理解数据背后的规律至关重要。</p>
+        </div>
+
+        <footer>
+            <p>数据教育 &mdash; yangxinand.github.io</p>
+        </footer>
+    </div>
+</body>
+</html>

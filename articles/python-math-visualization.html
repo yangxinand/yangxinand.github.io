@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用 Python 可视化数学函数 - 数据教育</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .back-link { display: inline-block; color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; }
+        .back-link:hover { color: #38bdf8; }
+        .article-header { margin-bottom: 2rem; }
+        .article-header h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 0.5rem; }
+        .article-header .meta { color: #64748b; font-size: 0.85rem; }
+        .tag { display: inline-block; background: #1e293b; color: #38bdf8; padding: 0.15rem 0.6rem; border-radius: 12px; font-size: 0.75rem; margin-right: 0.4rem; }
+        .article-body h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid #334155; }
+        .article-body h3 { font-size: 1.15rem; color: #cbd5e1; margin: 1.5rem 0 0.5rem; }
+        .article-body p { color: #94a3b8; margin-bottom: 1rem; }
+        .article-body ul, .article-body ol { color: #94a3b8; margin: 0.5rem 0 1rem 1.5rem; }
+        .article-body li { margin-bottom: 0.4rem; }
+        .article-body code { background: #1e293b; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; color: #38bdf8; }
+        .article-body .highlight-box { background: #1e293b; border-left: 3px solid #38bdf8; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .article-body pre { background: #1e293b; padding: 1rem 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; }
+        .article-body pre code { background: none; padding: 0; color: #cbd5e1; }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../articles.html" class="back-link">&larr; 返回文章列表</a>
+        <div class="article-header">
+            <h1>用 Python 可视化数学函数</h1>
+            <div class="meta">2026-03-15 &middot; <span class="tag">编程</span><span class="tag">可视化</span></div>
+        </div>
+        <div class="article-body">
+            <p>数据可视化是理解数学函数最直观的方式。Python 提供了强大的工具来绘制函数图像，本文介绍两种主流方案。</p>
+            <h2>1. Matplotlib 基础绘图</h2>
+            <p>matplotlib 是 Python 最基础的绘图库，适合绘制各类函数图像：</p>
+            <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-5, 5, 200)
+y = x**2
+plt.plot(x, y)
+plt.title('y = x²')
+plt.grid(True)
+plt.show()</code></pre>
+            <h2>2. Plotly 交互式绘图</h2>
+            <p>plotly 支持交互式图表，学生可以缩放、平移、查看坐标值，学习体验更好。</p>
+            <h2>3. 教学应用</h2>
+            <ul>
+                <li>对比不同幂函数的图像特征</li>
+                <li>动态展示参数变化对图像的影响</li>
+                <li>叠加绘制函数与其导函数</li>
+            </ul>
+            <div class="highlight-box"><p>编程可视化让抽象的数学概念变得触手可及，是数据教育的有力工具。</p></div>
+        </div>
+        <footer><p>数据教育 &mdash; yangxinand.github.io</p></footer>
+    </div>
+</body>
+</html>

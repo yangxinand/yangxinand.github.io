@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>从指数到对数：理解数据增长模式 - 数据教育</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .back-link { display: inline-block; color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; }
+        .back-link:hover { color: #38bdf8; }
+        .article-header { margin-bottom: 2rem; }
+        .article-header h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 0.5rem; }
+        .article-header .meta { color: #64748b; font-size: 0.85rem; }
+        .tag { display: inline-block; background: #1e293b; color: #38bdf8; padding: 0.15rem 0.6rem; border-radius: 12px; font-size: 0.75rem; margin-right: 0.4rem; }
+        .article-body h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid #334155; }
+        .article-body h3 { font-size: 1.15rem; color: #cbd5e1; margin: 1.5rem 0 0.5rem; }
+        .article-body p { color: #94a3b8; margin-bottom: 1rem; }
+        .article-body ul, .article-body ol { color: #94a3b8; margin: 0.5rem 0 1rem 1.5rem; }
+        .article-body li { margin-bottom: 0.4rem; }
+        .article-body code { background: #1e293b; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; color: #38bdf8; }
+        .article-body .highlight-box { background: #1e293b; border-left: 3px solid #38bdf8; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../articles.html" class="back-link">&larr; 返回文章列表</a>
+        <div class="article-header">
+            <h1>从指数到对数：理解数据增长模式</h1>
+            <div class="meta">2026-04-20 &middot; <span class="tag">数学</span><span class="tag">基础概念</span></div>
+        </div>
+        <div class="article-body">
+            <p>指数增长与对数增长是数据分析中最常见的两种模式。理解它们之间的区别和联系，对于正确解读数据至关重要。</p>
+            <h2>1. 指数增长</h2>
+            <p>指数函数的形式为 <code>y = a<sup>x</sup></code>（a &gt; 1）。在数据领域，我们经常见到指数增长的例子：病毒传播、复利增长、摩尔定律等。</p>
+            <div class="highlight-box"><p>指数增长的特点是：增长速率与当前值成正比。这意味着越到后期，增长速度越快。</p></div>
+            <h2>2. 对数增长</h2>
+            <p>对数函数是指数函数的反函数，形式为 <code>y = log<sub>a</sub>(x)</code>。对数增长的特点是初期增长快，但逐渐趋于平缓。</p>
+            <h2>3. 数据场景对比</h2>
+            <ul>
+                <li><strong>用户增长：</strong>初期通常是指数型，后期转为对数型（S 曲线）</li>
+                <li><strong>算法复杂度：</strong>O(log n) 意味着随着数据量翻倍，时间只增加一个常数</li>
+                <li><strong>信息量度量：</strong>信息熵使用对数来量化不确定性</li>
+            </ul>
+            <h2>4. 教学要点</h2>
+            <p>教学中建议用实际数据对比两种增长，让学生直观感受差异。重点讲清对数变换在数据分析中的作用。</p>
+        </div>
+        <footer><p>数据教育 &mdash; yangxinand.github.io</p></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>概率论基础：从古典概型到贝叶斯思维 - 数据教育</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .back-link { display: inline-block; color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; }
+        .back-link:hover { color: #38bdf8; }
+        .article-header { margin-bottom: 2rem; }
+        .article-header h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 0.5rem; }
+        .article-header .meta { color: #64748b; font-size: 0.85rem; }
+        .tag { display: inline-block; background: #1e293b; color: #38bdf8; padding: 0.15rem 0.6rem; border-radius: 12px; font-size: 0.75rem; margin-right: 0.4rem; }
+        .article-body h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid #334155; }
+        .article-body h3 { font-size: 1.15rem; color: #cbd5e1; margin: 1.5rem 0 0.5rem; }
+        .article-body p { color: #94a3b8; margin-bottom: 1rem; }
+        .article-body ul, .article-body ol { color: #94a3b8; margin: 0.5rem 0 1rem 1.5rem; }
+        .article-body li { margin-bottom: 0.4rem; }
+        .article-body code { background: #1e293b; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; color: #38bdf8; }
+        .article-body .highlight-box { background: #1e293b; border-left: 3px solid #38bdf8; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../articles.html" class="back-link">&larr; 返回文章列表</a>
+        <div class="article-header">
+            <h1>概率论基础：从古典概型到贝叶斯思维</h1>
+            <div class="meta">2026-04-05 &middot; <span class="tag">概率</span><span class="tag">统计学</span></div>
+        </div>
+        <div class="article-body">
+            <p>概率论是数据科学的基石。从抛硬币的古典概型到现代贝叶斯推断，概率思维帮助我们量化不确定性、做出更好的决策。</p>
+            <h2>1. 古典概型</h2>
+            <p>古典概型是最简单的概率模型：所有基本事件等可能发生，概率 = 有利事件数 / 总事件数。</p>
+            <h2>2. 条件概率</h2>
+            <p><code>P(A|B) = P(A∩B) / P(B)</code>，表示在 B 发生的条件下 A 发生的概率。条件概率是贝叶斯定理的基础。</p>
+            <h2>3. 贝叶斯定理</h2>
+            <p><code>P(H|E) = P(E|H)·P(H) / P(E)</code></p>
+            <p>贝叶斯定理提供了一种根据新证据更新信念的数学框架。在数据科学中，它广泛应用于：</p>
+            <ul>
+                <li>垃圾邮件过滤</li>
+                <li>医学诊断</li>
+                <li>A/B 测试</li>
+                <li>机器学习中的朴素贝叶斯分类器</li>
+            </ul>
+            <div class="highlight-box"><p>贝叶斯思维的核心：先验信念 + 数据证据 = 后验信念。学习是一个持续更新概率的过程。</p></div>
+            <h2>4. 教学建议</h2>
+            <p>从实际案例出发（如疾病检测的假阳性问题），让学生体会先验概率的重要性，培养贝叶斯直觉。</p>
+        </div>
+        <footer><p>数据教育 &mdash; yangxinand.github.io</p></footer>
+    </div>
+</body>
+</html>
